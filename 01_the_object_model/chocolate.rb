@@ -1,7 +1,8 @@
 # How do we create an object in Ruby? Give an example of the creation of an
 # object.
 
-class Chocolate
-end
+require_relative 'eatable'
 
-chocolate = Chocolate.new
+class Chocolate
+  include Eatable
+end
