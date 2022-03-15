@@ -24,6 +24,7 @@ class Chocolate
     @cacao_percent =
       case @type.downcase
       when 'dark' then 70
+      when 'very dark' then 85
       else 0
       end
   end
