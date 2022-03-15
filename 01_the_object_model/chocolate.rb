@@ -6,11 +6,14 @@ require_relative 'eatable'
 class Chocolate
   include Eatable
 
-  def initialize(type)
+  attr_accessor :type, :grams
+
+  def initialize(type, grams)
     @type = type
+    @grams = grams
   end
 
   def consider
-    "Your desire for a #{@type} embrace could soon be fulfilled..."
+    "Your desire for a #{grams}g #{@type} embrace could soon be fulfilled..."
   end
 end
