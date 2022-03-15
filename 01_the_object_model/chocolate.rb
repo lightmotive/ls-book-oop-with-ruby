@@ -11,6 +11,6 @@ class Chocolate
   end
 
   def purchase
-    "Your desire for #{@type} embrace will soon be fulfilled..."
+    "Your desire for a #{@type} embrace will soon be fulfilled..."
   end
 end
