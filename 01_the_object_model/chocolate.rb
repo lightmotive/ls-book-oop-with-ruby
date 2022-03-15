@@ -10,7 +10,7 @@ class Chocolate
     @type = type
   end
 
-  def purchase
-    "Your desire for a #{@type} embrace will soon be fulfilled..."
+  def consider
+    "Your desire for a #{@type} embrace could soon be fulfilled..."
   end
 end
