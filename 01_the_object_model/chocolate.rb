@@ -6,7 +6,11 @@ require_relative 'eatable'
 class Chocolate
   include Eatable
 
-  def initialize
-    puts 'A dark embrace awaits you...'
+  def initialize(type)
+    @type = type
+  end
+
+  def purchase
+    puts "A #{@type} embrace awaits you..."
   end
 end

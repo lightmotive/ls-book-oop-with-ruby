@@ -2,5 +2,6 @@
 
 require_relative 'chocolate'
 
-chocolate = Chocolate.new
+chocolate = Chocolate.new('dark')
+chocolate.purchase
 chocolate.savor
