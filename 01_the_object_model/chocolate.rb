@@ -5,4 +5,8 @@ require_relative 'eatable'
 
 class Chocolate
   include Eatable
+
+  def initialize
+    puts 'A dark embrace awaits you...'
+  end
 end
