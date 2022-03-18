@@ -9,12 +9,16 @@
 
 class MyCar
   attr_accessor :year, :model, :color, :speed
-  private :year=, :model=, :speed=
+  private :year=, :model=, :color=, :speed=
 
   def initialize(year, model, color)
     self.year = year
     self.color = color
     self.model = model
+  end
+
+  def spray_paint(color)
+    self.color = color
   end
 
   def start

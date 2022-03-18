@@ -4,6 +4,7 @@ require_relative 'my_car'
 
 car = MyCar.new(2017, 'Mazda3', 'Silver')
 
+car.spray_paint('Red')
 car.start
 car.accelerate(60)
 car.brake(30)
