@@ -25,7 +25,7 @@ class Chocolate
   end
 
   def update_cacao_percent
-    # `cacao_percent` will be updated only in this method; update the ivar here:
+    # `cacao_percent` will be updated only in this method; set the ivar here:
     @cacao_percent =
       case type.downcase
       when 'dark' then 70
