@@ -22,14 +22,18 @@ class MyCar
     puts "I feel a need for speed in my #{color} #{year} #{model}!"
   end
 
+  def change_speed(by_number)
+    self.speed += by_number
+    puts "You #{by_number.positive? ? 'accelerated' : 'decelerated'} by #{by_number.abs} mph and are now traveling at #{self.speed} mph."
+  end
+  private :change_speed
+
   def accelerate(number)
-    self.speed += number
-    puts "You accelerated by #{number} mph and are now traveling at #{self.speed} mph."
+    change_speed(number)
   end
 
   def brake(number)
-    self.speed -= number
-    puts "You decelerated by #{number} mph and are now traveling at #{self.speed} mph."
+    change_speed(-number)
   end
 
   def stop
