@@ -9,7 +9,7 @@
 
 class MyCar
   attr_accessor :year, :model, :color, :speed
-  private :speed
+  private :year=, :model=, :speed=
 
   def initialize(year, model, color)
     self.year = year
