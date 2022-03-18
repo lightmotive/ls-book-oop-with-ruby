@@ -19,6 +19,7 @@ class MyCar
 
   def spray_paint(color)
     self.color = color
+    puts "Nice #{color}!"
   end
 
   def start
