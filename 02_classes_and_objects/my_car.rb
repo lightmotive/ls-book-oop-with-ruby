@@ -29,7 +29,7 @@ class MyCar
 
   def start
     self.speed = 0
-    puts "I feel a need for speed in my #{color} #{year} #{model}!"
+    puts "I feel a need for speed in my #{self}!"
   end
 
   def change_speed(by_number)
@@ -49,5 +49,9 @@ class MyCar
   def stop
     self.speed = 0
     puts "OK, that's enough fun for now."
+  end
+
+  def to_s
+    "#{color} #{year} #{model}"
   end
 end
