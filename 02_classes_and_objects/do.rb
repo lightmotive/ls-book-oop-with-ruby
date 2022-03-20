@@ -9,3 +9,5 @@ car.start
 car.accelerate(60)
 car.brake(30)
 car.stop
+
+p MyCar.gas_mileage(75, 2)

@@ -17,6 +17,11 @@ class MyCar
     self.model = model
   end
 
+  # Exercise: add class method that calculates miles per gallon
+  def self.gas_mileage(miles, gallons)
+    miles.fdiv(gallons).round(1)
+  end
+
   def spray_paint(color)
     self.color = color
     puts "Nice #{color}!"
