@@ -25,5 +25,7 @@ truck.brake(25)
 truck.stop
 puts truck.status
 puts truck
+truck.plug_in
+truck.unplug
 
 puts "Total vehicles created: #{Vehicle.vehicles_created}"

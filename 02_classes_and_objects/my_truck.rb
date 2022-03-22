@@ -1,8 +1,11 @@
 # frozen_string_literal: true
 
 require_relative 'vehicle'
+require_relative 'chargeable'
 
 class MyTruck < Vehicle
+  include Chargeable
+
   attr_accessor :bed_door_open
   private :bed_door_open=
 
