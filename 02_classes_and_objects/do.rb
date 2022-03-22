@@ -17,6 +17,7 @@ car.brake(30)
 car.stop
 puts car.status
 puts car
+puts car.age
 
 p Vehicle.gas_mileage(75, 2)
 
@@ -32,5 +33,7 @@ puts truck.status
 puts truck
 truck.plug_in
 truck.unplug
+
+puts truck.age
 
 puts "Total vehicles created: #{Vehicle.vehicles_created}"

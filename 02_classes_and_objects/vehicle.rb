@@ -64,4 +64,14 @@ class Vehicle
   def self.vehicles_created
     @@vehicle_count
   end
+
+  def age
+    puts "Your #{model} is #{age_in_years} years old."
+  end
+
+  private
+
+  def age_in_years
+    Time.now.year - year
+  end
 end
