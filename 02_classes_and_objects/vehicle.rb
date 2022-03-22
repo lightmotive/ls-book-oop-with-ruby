@@ -4,7 +4,11 @@ class Vehicle
   attr_accessor :year, :model, :color, :speed
   private :year=, :model=, :color=, :speed=
 
+  @@vehicle_count = 0
+
   def initialize(year, model, color)
+    @@vehicle_count += 1
+
     self.year = year
     self.color = color
     self.model = model
@@ -55,5 +59,9 @@ class Vehicle
 
   def to_s
     "#{color} #{year} #{model}"
+  end
+
+  def self.vehicles_created
+    @@vehicle_count
   end
 end

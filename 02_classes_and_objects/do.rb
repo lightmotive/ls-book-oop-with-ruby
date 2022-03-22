@@ -25,3 +25,5 @@ truck.brake(25)
 truck.stop
 puts truck.status
 puts truck
+
+puts "Total vehicles created: #{Vehicle.vehicles_created}"
