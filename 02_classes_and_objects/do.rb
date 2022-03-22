@@ -3,6 +3,10 @@
 require_relative 'my_car'
 require_relative 'my_truck'
 require_relative 'vehicle'
+require_relative 'Chargeable'
+
+p Chargeable.ancestors
+p Vehicle.ancestors
 
 car = MyCar.new(2017, 'Mazda3', 'Silver')
 p MyCar.ancestors
