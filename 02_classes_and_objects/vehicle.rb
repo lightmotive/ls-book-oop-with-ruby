@@ -27,9 +27,14 @@ class Vehicle
 
   def change_speed(by_number)
     self.speed += by_number
-    puts "You #{by_number.positive? ? 'accelerated' : 'decelerated'} by #{by_number.abs} mph and are now traveling at #{self.speed} mph."
+    puts "You #{by_number.positive? ? 'accelerated' : 'decelerated'} by " \
+    "#{by_number.abs} mph and are now traveling at #{speed_display}."
   end
   private :change_speed
+
+  def speed_display
+    "#{self.speed} mph"
+  end
 
   def accelerate(number)
     change_speed(number)
@@ -42,6 +47,10 @@ class Vehicle
   def stop
     self.speed = 0
     puts "OK, that's enough fun for now."
+  end
+
+  def status
+    "Your current speed is #{speed_display}."
   end
 
   def to_s
