@@ -5,7 +5,7 @@ require_relative 'my_truck'
 require_relative 'vehicle'
 
 car = MyCar.new(2017, 'Mazda3', 'Silver')
-
+p MyCar.ancestors
 car.spray_paint('Red')
 car.start
 car.accelerate(60)
@@ -17,6 +17,7 @@ puts car
 p Vehicle.gas_mileage(75, 2)
 
 truck = MyTruck.new(2022, 'Tesla Cybertruck', 'Aluminum')
+p MyTruck.ancestors
 truck.start
 truck.open_bed_door
 truck.close_bed_door
